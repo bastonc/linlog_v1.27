@@ -460,7 +460,7 @@ class log_Window(QWidget):
                 context_menu.addAction(edit_record)
                 context_menu.addAction(send_eqsl)
                 context_menu.addAction(delete_record)
-            context_menu.exec(self.tableWidget_qso.mapToGlobal(point))
+            context_menu.exec_(self.tableWidget_qso.mapToGlobal(point))
 
         def send_eqsl_for_call(self, row):
             #row = self.tableWidget.currentItem().row()
